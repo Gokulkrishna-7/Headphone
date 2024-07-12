@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_headset</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        #intro{
+            width: auto;
+            height: 670px;
+            background-image: url(https://w0.peakpx.com/wallpaper/196/409/HD-wallpaper-headphones-music-concepts-headphones-on-a-yellow-background.jpg);
+            background-size: 1500px;
+            position: relative;
+        }
+
+        #intro p{
+            position: absolute;
+            top: 350px;
+            left: 100px;
+        }
+
+        #intro h1{
+            position: absolute;
+            top: 380px;
+            left: 100px;
+        }
+
+        #intro button{
+            position: absolute;
+            top: 485px;
+            left: 120px;
+            border-radius: 20px;
+        }
+
+        .desc{
+            width: auto;
+            height: 200px;
+        }
+
+        .desc h1{
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+
+        .desc p{
+            margin-top: 20px;
+            margin-left: 90px;
+        }
+
+        #best{
+            width: auto;
+            height: 80px;
+            
+        }
+
+        #best h2{
+            text-align: center;
+            align-content: center;
+            padding-top: 15px;
+            color: white;
+        }
+
+        #collection{
+            margin-bottom: 80px
+        }
+
+        #collection h2{
+            margin-top: 40px;
+            margin-left: 110px;
+        }
+
+        #collection #collection-base{
+            width: 88%;
+            margin-left: 100px;
+        }
+
+        #gallery{
+            margin-bottom: 50px;
+        }
+
+        #gallery #gallery-base image:hover{
+            background-color: grey;
+        }
+
+        #gallery h2{
+            margin-left: 100px;
+        }
+
+        #gallery #gallery-base{
+            width: 90%;
+        }
+
+        #gallery #gallery-base .row .col img:hover{
+          
+          transition: .6s;
+          border-radius: 8px;
+          background-color: 0 0 20px rgb(0, 0, 0);
+        }
+
+        #like{
+            width: auto;
+            height: 150px;
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        #like p{
+            position: absolute;
+            top: 30px;
+            left: 150px;
+            color: white;
+            font-size: 12px;
+        }
+
+        #like h1{
+            position: absolute;
+            top: 60px;
+            left: 150px;
+            color: white;
+            font-size: 30px;
+            
+        }
+
+        #like button{
+            position: absolute;
+            top: 60px;
+            left: 1100px; 
+            border-radius: 25px;           
+        }
+
+        #conclusion{
+            margin-bottom: 80px;
+            margin-top: 80px;
+            position: relative;
+        }
+
+        #conclusion h2{
+            text-align: center;
+        }
+
+        #conclusion .flexclass{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+
+        #conclusion .flexclass h1{
+            font-size: 70px;
+            color: orange;
+        }
+
+        #conclusion .flexp{
+            display: flex;
+            width: 70%;
+            margin-right: 20px;
+            justify-content: center;
+            position: absolute;
+           left: 150px;
+        }
+    
+        #map h1{
+            text-align: center;
+            padding-bottom: 10PX;
+        }
+
+        #map p{
+            text-align: center;
+            padding-bottom: 0;
+        }
+
+        .overnum{
+            position: relative;
+            top: 28%;
+        }
+
+        .iconssocial a {
+          height: 50px;
+          width: 50px;
+          border-radius: 55px;
+        }
+
+        #navbarcontent{
+          margin-left: 650px;
+        }
+
+        #navbarcontent .subcontent{
+          margin-left: 650px;
+        }
+
+        #navbarcontent .subcontent{
+          margin-left: 650px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- navbar -->
+    <!-- navbar  -->
+    <nav class="navbar navbar-light bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">
+         
+        </a>
+       
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+      </div>
+      <div  class="collapse text-center" id="navbarToggleExternalContent">
+          <div class="bg-warning">
+            <ul  id="navbarcontent" class="text-light" type="none">
+              <li>Home</li>
+              <li class="text-center">Watch Video</li>
+              <li class="dropdown dropdown-toggle" id="dropdownMenuButton1" aria-expanded="true" data-bs-toggle="dropdown">Blocks</li>
+                  <ul class="subcontent dropdown-menu bg-warning" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Menu Pages</a></li>
+                    <li><a class="dropdown-item" href="#">Headers</a></li>
+                    <li><a class="dropdown-item" href="#">Images and Videos</a></li>
+                    <li><a class="dropdown-item" href="#">Shops</a></li>
+                    <li><a class="dropdown-item" href="#">Features</a></li>
+                    <li><a class="dropdown-item" href="#">Content</a></li>
+                    <li><a class="dropdown-item" href="#">Info</a></li>
+                  </ul>
+              
+                  <li class="dropdown dropdown-toggle" id="dropdownMenuButton2" aria-expanded="false" data-bs-toggle="dropdown">Demo pages</li>
+                  <ul class="subcontent dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">Headphone shop</a></li>
+                    <li><a class="dropdown-item" href="#">Show shop</a></li>
+                    <li><a class="dropdown-item" href="#">Cafe</a></li>
+                  </ul>
+            </ul>
+          </div>
+        </div>
+    </nav>
+     <!-- navbar ends -->
+
+     <!-- introduction -->
+     <div id="intro" class="bg-warning">
+        <p>THINKING OF BUYING A HEADPHONE?</p>
+        <H1>WELCOME TO OUR <BR>HEADPHONES SHOP</BR></H1>
+        <button class="btn btn-light">SHOPPING NOW </button>
+     </div>
+     <!-- intro ends -->
+
+     <!-- description -->
+     <div class="desc">
+        <h1>Find a quality and right headphones not easy</h1>
+        <p><b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Ad saepe labore consequuntur magnam id cumque culpa distinctio nesciunt iste eos qui, molestias repellat enim dolorem doloremque? Eos aliquid facilis libero.
+        Incidunt iusto eligendi maxime quam, quibusdam est, atque ullam adipisci consequuntur enim suscipit commodi corrupti eius ipsum laudantium facilis? Rem vel, ratione beatae velit dolorem quas perspiciatis eos deserunt consectetur.
+        At adipisci, blanditiis vitae dolor assumenda, voluptatibus optio suscipit molestiae rem, libero cum atque quaerat veritatis dolore asperiores temporibus hic quas porro neque provident sapiente similique eos culpa recusandae! Eius.</p>
+     </div>
+     <!-- description ends -->
+
+     <!-- best headphone -->
+     <div id="best" class="bg-warning">
+        <h2>We will help you to choose the best headphones!</h2>
+     </div>
+     <!-- best headphone -->
+
+     <!-- hottest headphone -->
+      <div id="collection">
+        <h2>Hottest headphones of the month</h2>
+        <div id="collection-base" class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2018/01/16/10/18/headphones-3085681_1280.jpg" class="card-img-top" alt="headphone">
+                <div class="card-body bg-warning">
+                  <h5 class="card-title">HEADPHONES</h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur tempora autem voluptas debitis at.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2021/02/13/14/51/music-6011755_1280.jpg" class="card-img-top" alt="headphone1">
+                <div class="card-body bg-warning">
+                    <h5 class="card-title">HEADPHONES</h5>
+                    <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur tempora autem voluptas debitis at.</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2018/03/16/16/18/girl-3231703_1280.jpg" class="card-img-top" alt="headphone 2">
+                <div class="card-body bg-warning">
+                    <h5 class="card-title">HEADPHONES</h5>
+                    <p class="card-text text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur tempora autem voluptas debitis at.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+     <!-- hottest headphone ends -->
+
+     <!-- gallery -->
+      <div id="gallery">
+        <h2>Meet Our New Headphones</h2>
+        <div id="gallery-base" class="container ">
+            <div id="imagehover" class="row row-cols-1 row-cols-sm-2 row-cols-md-4 m-1 mb-4" >
+              <div class="col"><img width="250px" height="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL1qug6gh8pfD-AzfWhMdy7hu8yaqvs7yQ7A&s" alt="img1"></div>
+              <div class="col"><img width="250px" height="150px" src="https://img.freepik.com/premium-photo/yellow-headphones-yellow-background-minimalism-party-concept-3d-rendering_494516-720.jpg" alt=""></div>
+              <div class="col"><img width="250px" height="150px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1-0E8lZNOox19O6L8xjhnrMM_zYAluLBhfQ&s" alt=""></div>
+              <div class="col"><img width="250px" height="150px" src="https://img.freepik.com/premium-photo/black-headphone-up-against-yellow-solid-background_1003533-799.jpg" alt=""></div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 mt-2 row-cols-md-4 m-1 ">
+                <div class="col"><img width="250px" height="150px" src="https://pics.craiyon.com/2023-11-18/XBujiDjsTdiiWhWCWgGSZg.webp" alt="img1"></div>
+                <div class="col"><img width="250px" height="150px" src="https://png.pngtree.com/thumb_back/fh260/background/20231002/pngtree-simplistic-3d-render-vibrant-yellow-headphones-amidst-a-minimalistic-yellow-background-image_13596542.png" alt=""></div>
+                <div class="col"><img width="250px" height="150px" src="https://i.pinimg.com/736x/9c/e6/1f/9ce61fc51a25eef5d91788b0fe73c751.jpg" alt=""></div>
+                <div class="col"><img width="250px" height="150px" src="https://w0.peakpx.com/wallpaper/711/651/HD-wallpaper-music-my-get-away-earphones-music-ultra-music-headphone-earphone-earphone-background.jpg" alt=""></div>
+              </div>
+          </div>
+      </div>
+
+     <!-- gallery ends -->
+
+     <!-- message -->
+     <div id="like" class="bg-warning">
+        <p>HURRY UP THE OFFER IS LIMITED</p>
+        <h1>Like it? Pre-order and get a discount</h1>
+        <button class="btn btn-light">Learn More</button>
+     </div>
+     <!-- message ends -->
+
+     <!-- conclusion -->
+     <div>
+        <h2 class="text-center">Why do you have to buy headphones only for us?</h2>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <h4 class="overnum">HIGH QUALITY</h4>
+                <h1 class="text-warning" style="font-size:60px;">01.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eveniet impedit dolor nihil quidem harum. <span class="text-warning">Learn More..</span></p>
+            </div>
+              <div class="col">   
+                <h4 class="overnum">ORIGINAL DEVICES</h4>
+                <h1 class="text-warning" style="font-size:60px;">02.</h1> 
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eveniet impedit dolor nihil quidem harum. <span class="text-warning">Learn More..</span></p>
+            </div>
+              <div class="col">
+                <h4 class="overnum">YEAR WARRANTY</h4>
+                <h1 class="text-warning" style="font-size:60px;">03.</h1>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eveniet impedit dolor nihil quidem harum. <span class="text-warning">Learn More..</span></p>
+            
+              </div>
+              <div class="col">
+                <h4 class="overnum">WEEK TO CHECK</h4>
+                <h1 class="text-warning"style="font-size:60px;">04.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis eveniet impedit dolor nihil quidem harum. <span class="text-warning">Learn More..</span></p>
+              </div>
+            </div>
+            
+          </div>
+     </div>
+     <!-- conclusion ends -->
+
+     <!-- map -->
+     <div id="map">
+        <p>STILL NOT CONVINCED?</p>
+        <h1>Visit us and see yourself</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1003834.5392848813!2d75.40227501880345!3d10.639335570782842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+        1!3m3!1m2!1s0x3b080ffce877d5ef%3A0x8bef6870ad11b98!2sLuminar%20Technolab%20-%20Python%20Training%2C%20Artificial%20Intelligence%20Training%2C%20Full%20Stack%20Training%2C%20Java%20Training%20in%20Kochi!5e0!3m2!1sen!2sin!4v1720675377682!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+     <!-- map ends -->
+
+     <!-- footer -->
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+            <span><img width="100px" height="80px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW1yhlTpkCnujnhzP-xioiy9RdDQkKLMnMSg&s" alt=""></span>
+          </div>
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>2018 All rights Reserved Terms of Use and Privacy Policy</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div class="iconssocial">
+        <a href="" class="me-4 text-reset bg-warning">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset bg-warning">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset bg-warning">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset bg-warning">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset bg-warning">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset bg-warning">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+  <!-- Footer -->
+      <!-- footer ends -->
+
+</body>
+</html>
